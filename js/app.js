@@ -52,7 +52,12 @@ Player.prototype.update = function() {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
-    
+    allEnemies.forEach(function(enemy) {
+        if (enemy.y === this.y && this.x > enemy.x && this.x < (enemy.x + 75)) {
+            console.log('Collision!');
+            this.y = 400;
+        }
+    }, this);
 };
 
 // Draw the player on the screen, required method for game
