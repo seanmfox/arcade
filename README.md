@@ -8,7 +8,9 @@ This game is a component of the Udacity Front-End Nanodegree Program.  Special a
 
 # How to run
 
-The game is run through loading `index.html`. Once loaded, the game will render based on the code provided in the `app.js`, `engine.js` and `resources.js` files.  All images are provided in the `images` folder with CSS styling based in `styles.css`. 
+* The game is run through loading `index.html`. 
+* Once loaded, the game will render based on the code provided in `app.js` (player and enemy object mechanics), `engine.js` (canvas creation and update) and `resources.js` (image utility) files.  
+* All images are provided in the `images` folder with CSS styling based in `styles.css`. 
 
 # Dependencies
 
@@ -18,8 +20,3 @@ This program has the following dependencies:
 # How to play
 
 The game is played using the arrow keys.  Once the water has been reaced, the player is returned to the start in order to attempt another run.
-
-# Skills Incorporated
-
-The following skills were used in developing this project:
-* Object-Oriented JavaScript
