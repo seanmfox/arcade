@@ -43,6 +43,11 @@ var Player = function () {
     this.sprite = 'images/char-boy.png';
     this.x = 200;
     this.y = 400;
+    this.wins = 0;
+    this.winGame = function() {
+        this.wins += 1;
+        this.y = 400;
+    };
 
 };
 
@@ -54,7 +59,6 @@ Player.prototype.update = function() {
     // all computers.
     allEnemies.forEach(function(enemy) {
         if (enemy.y === this.y && this.x > (enemy.x - 75) && this.x < (enemy.x + 75)) {
-            console.log('Collision!');
             this.y = 400;
         }
     }, this);
@@ -69,8 +73,7 @@ Player.prototype.handleInput = function(key) {
     switch (key) {
         case 'up':
             if (this.y === 60) {
-                console.log("You win!");
-                this.y = 400;
+                this.winGame();
             } else {
             this.y -= 85;
             }

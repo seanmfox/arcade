@@ -22,11 +22,14 @@ var Engine = (function(global) {
         win = global.window,
         canvas = doc.createElement('canvas'),
         ctx = canvas.getContext('2d'),
-        lastTime;
+        lastTime, scoringBox = doc.createElement('p');
 
     canvas.width = 505;
     canvas.height = 606;
     doc.body.appendChild(canvas);
+    scoringBox.innerHTML = `Win count: ${player.wins}`;
+    scoringBox.classList.add('winning');
+    doc.body.appendChild(scoringBox);
 
     /* This function serves as the kickoff point for the game loop itself
      * and handles properly calling the update and render methods.
@@ -46,7 +49,7 @@ var Engine = (function(global) {
          */
         update(dt);
         render();
-
+        scoringBox.innerHTML = `Win count: ${player.wins}`;
         /* Set our lastTime variable which is used to determine the time delta
          * for the next time this function is called.
          */

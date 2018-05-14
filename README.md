@@ -1,6 +1,25 @@
-frontend-nanodegree-arcade-game
-===============================
+# Effective JavaScript: Frogger Game
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+Do your best to dodge the enemy ladybugs and reach the water safely!
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+# Description
+
+This game is a component of the Udacity Front-End Nanodegree Program.  Special attention in this project is given toward practicing Object-Oriented JavaScript.
+
+# How to run
+
+The game is run through loading `index.html`. Once loaded, the game will render based on the code provided in the `app.js`, `engine.js` and `resources.js` files.  All images are provided in the `images` folder with CSS styling based in `styles.css`. 
+
+# Dependencies
+
+This program has the following dependencies:
+* Google Fonts (https://fonts.google.com/) - provides custom font styling
+
+# How to play
+
+The game is played using the arrow keys.  Once the water has been reaced, the player is returned to the start in order to attempt another run.
+
+# Skills Incorporated
+
+The following skills were used in developing this project:
+* Object-Oriented JavaScript

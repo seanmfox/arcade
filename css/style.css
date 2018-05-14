@@ -1,3 +1,8 @@
 body {
     text-align: center;
 }
+
+.winning {
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+}
