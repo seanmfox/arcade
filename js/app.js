@@ -53,7 +53,7 @@ Player.prototype.update = function() {
     // which will ensure the game runs at the same speed for
     // all computers.
     allEnemies.forEach(function(enemy) {
-        if (enemy.y === this.y && this.x > enemy.x && this.x < (enemy.x + 75)) {
+        if (enemy.y === this.y && this.x > (enemy.x - 75) && this.x < (enemy.x + 75)) {
             console.log('Collision!');
             this.y = 400;
         }
